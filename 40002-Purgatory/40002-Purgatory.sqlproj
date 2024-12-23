@@ -57,5 +57,57 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Views\" />
+    <Folder Include="Security\" />
+    <Folder Include="dbo\Functions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Views\Z_WESTRAC_HITACHI_DOWN.sql" />
+    <Build Include="dbo\Views\Z_WESTRAC_DOWN.sql" />
+    <Build Include="dbo\Views\Z_WENCO_OPERATOR_MESSAGING_NAMES_STATUS.sql" />
+    <Build Include="dbo\Views\Z_WENCO_OPERATOR_MESSAGING_NAMES.sql" />
+    <Build Include="dbo\Views\Z_WENCO_OPERATOR_MESSAGING.sql" />
+    <Build Include="dbo\Views\Z_PRODUCTIVITY_ROMBIN2.sql" />
+    <Build Include="dbo\Views\Z_HITACHI_DOWN.sql" />
+    <Build Include="dbo\Views\Z_EQUIP_SUB_STATUS_SUMMARY.sql" />
+    <Build Include="dbo\Views\Z_EQUIP_STATUS_SUMMARY.sql" />
+    <Build Include="dbo\Views\Z_EQUIP_KPI_BY_MODEL.sql" />
+    <Build Include="dbo\Views\Z_EQUIP_KPI_BY_EQUIP.sql" />
+    <Build Include="dbo\Views\Z_BUSINESS_RULES_HOURS.sql" />
+    <Build Include="dbo\Views\Z_BUSINESS_RULES_HAULCYCLES.sql" />
+    <Build Include="Security\MiningReportViewer.sql" />
+    <Build Include="Security\RoleMemberships.sql" />
+    <Build Include="dbo\Functions\UptoString.sql" />
+    <Build Include="dbo\Functions\send_offroute_test.sql" />
+    <Build Include="dbo\Functions\LastPosition.sql" />
+    <Build Include="dbo\Functions\LastEquipLocation.sql" />
+    <Build Include="dbo\Functions\fn_truck_count.sql" />
+    <Build Include="dbo\Functions\dry_tonnes_pending_moisture_fix.sql" />
+    <Build Include="dbo\Functions\dry_tonnes.sql" />
+    <Build Include="dbo\Functions\BetweenString.sql" />
+    <Build Include="dbo\Functions\BCM.sql" />
+    <Build Include="dbo\Functions\STRING_SPLIT.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Functions\fn_smu_hour_by_shift.sql" />
+    <Build Include="dbo\Functions\equip_status_hour_summary.sql" />
+    <Build Include="dbo\Functions\equip_kpi_hour_range_old.sql" />
+    <Build Include="dbo\Functions\create_shift_hour_ranges_inline.sql" />
+    <Build Include="dbo\Functions\create_shift_hour_ranges.sql" />
+    <Build Include="dbo\Functions\maintenance_performance_westrac.sql" />
+    <Build Include="dbo\Functions\maintenance_performance_ex1900_dash6.sql" />
+    <Build Include="dbo\Functions\maintenance_performance_ex1900.sql" />
+    <Build Include="dbo\Functions\fn_datetime_to_shiftdate.sql" />
+    <Build Include="dbo\Functions\first_bucket.sql" />
+    <Build Include="dbo\Functions\equip_status_hour_summary_old.sql" />
+    <Build Include="dbo\Functions\equip_kpi_hour_range_per_unit.sql" />
+    <Build Include="dbo\Functions\equip_kpi_hour_range_per_digger_temp.sql" />
+    <Build Include="dbo\Functions\equip_kpi_hour_range.sql" />
+    <Build Include="dbo\Functions\equip_kpi_hour_per_unit_digger_temp.sql" />
+    <Build Include="dbo\Functions\equip_kpi_hour_per_unit.sql" />
+    <Build Include="dbo\Functions\equip_kpi_hour.sql" />
+    <Build Include="dbo\Functions\create_daterange2.sql" />
+    <Build Include="dbo\Functions\create_daterange.sql" />
   </ItemGroup>
 </Project>
