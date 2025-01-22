@@ -70,3 +70,8 @@ END
 
 RETURN(@truck_count/12*@incr)
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[fn_truck_count] TO [ANYACCESS\gen-au-mmo-WencoFMS]
+    AS [dbo];
+

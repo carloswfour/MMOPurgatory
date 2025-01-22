@@ -61,6 +61,7 @@
     <Folder Include="dbo\Views\" />
     <Folder Include="Security\" />
     <Folder Include="dbo\Functions\" />
+    <Folder Include="dbo\Tables\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Views\Z_WESTRAC_HITACHI_DOWN.sql" />
@@ -109,5 +110,12 @@
     <Build Include="dbo\Functions\equip_kpi_hour.sql" />
     <Build Include="dbo\Functions\create_daterange2.sql" />
     <Build Include="dbo\Functions\create_daterange.sql" />
+    <Build Include="dbo\Tables\Z_PIT_PROJAREAS.sql" />
+    <Build Include="dbo\Tables\Z_LOCAL_TRANSFORM_COEFFICIENTS.sql" />
+    <Build Include="dbo\Tables\GIS_ROMPad_DirectHaul.sql" />
+    <Build Include="dbo\Views\z_ROMLoadGPS.sql" />
+    <Build Include="dbo\Views\Z_ROMBIN_LU_HOURS_BY_GPS.sql" />
+    <Build Include="Security\ANYACCESS_gen-au-mmo-WencoFMS.sql" />
+    <Build Include="dbo\Functions\fn_shift_ident.sql" />
   </ItemGroup>
 </Project>

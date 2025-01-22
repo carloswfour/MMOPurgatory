@@ -99,7 +99,7 @@ RETURN (
 			THEN SUM(CASE WHEN statuscat_code in ('EFFIC','INEFFIC','ANCIL','AUX') THEN duration_min/60 ELSE 0 END) /  COUNT(CASE WHEN statuscat_code in ('CONT_BKD') THEN duration_min ELSE NULL END) ELSE 0 END as MTBF,
 		COUNT(CASE WHEN statuscat_code in ('CONT_BKD') THEN duration_min ELSE NULL END) AS failures,
 		fleet_count
-		FROM WencoReport.dbo.EQUIP_STATUS_HOUR_SUMMARY(@shift_date, @start_hour) AS ESHS
+		FROM PURGATORY.dbo.EQUIP_STATUS_HOUR_SUMMARY(@shift_date, @start_hour) AS ESHS
 		INNER JOIN(
 		SELECT eqmodel_code, descrip, COUNT(*) AS fleet_count
 		FROM WencoReport.dbo.equip
