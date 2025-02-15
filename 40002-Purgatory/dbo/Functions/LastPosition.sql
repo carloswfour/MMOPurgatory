@@ -34,3 +34,8 @@ BEGIN
 	RETURN @lastpos
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[LastPosition] TO [MiningReportViewer]
+    AS [dbo];
+

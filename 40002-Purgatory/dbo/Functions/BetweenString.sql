@@ -25,3 +25,8 @@ SET @returnString = SUBSTRING(@expression,@start + 1,@end - (@start + 1))
 
 return @returnString
 end
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[BetweenString] TO [MiningReportViewer]
+    AS [dbo];
+

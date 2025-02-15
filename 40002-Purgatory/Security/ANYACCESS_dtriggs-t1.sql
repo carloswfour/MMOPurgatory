@@ -1,0 +1,2 @@
+﻿CREATE USER [ANYACCESS\dtriggs-t1] FOR LOGIN [ANYACCESS\dtriggs-t1];
+
